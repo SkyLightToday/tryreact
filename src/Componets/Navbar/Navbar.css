@@ -1,0 +1,25 @@
+.App-nav {
+    grid-area: n;
+    background-color: #492661;
+  }
+
+  .App-nav {
+    padding-top: 20%;
+  }
+
+  .App-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 10%;
+
+  }
+
+  .App-nav_last {
+    margin-top: 20px;
+  }
+
+  .App-nav a:hover {
+    text-decoration: underline;
+    color: rgb(118, 150, 244);
+  }
