@@ -11,10 +11,10 @@ const Navbar = () => {
           <a href="/dialogs">Messages</a>
           </div>
         <div>
-          <a href="#s">News</a>
+          <a href="/news">News</a>
         </div>
         <div>
-          <a href="#s">Music</a>
+          <a href="/music">Music</a>
         </div>
         <div className="App-nav_last">
           <a href="#s">Settings</a>

@@ -1,0 +1,7 @@
+.news-content {
+    height: 500px;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(1, 11, 57, 0.5) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVKkpm34FtnUith96Wl3hUdxI0P0UIDIziw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
