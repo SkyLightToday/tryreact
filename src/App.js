@@ -8,7 +8,8 @@ import News from './Componets/News/News';
 import Music from './Componets/Music/Music';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
+
   return (
     <BrowserRouter>
     <div className="App-wrapper">
@@ -17,7 +18,7 @@ const App = () => {
      <div className="App-wrapper-content">
        <Routes>
           <Route path="/dialogs/*" element={<Dialogs />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile posts={props.posts} />} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
         </Routes>

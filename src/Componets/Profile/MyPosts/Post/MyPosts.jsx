@@ -2,13 +2,13 @@ import React from 'react';
 import  './MyPosts.css';
 import PostB from './PostB/PostB';
 
-const MyPosts = () => {
-  let posts = [
-    {id: 1, message: 'Привет! Как дела?', likesCount: 32},
-    {id: 2, message: 'Это мой первый пост.', likesCount: 47},
-];
+const MyPosts = (props) => {
+//   let posts = [
+//     {id: 1, message: 'Привет! Как дела?', likesCount: 32},
+//     {id: 2, message: 'Это мой первый пост.', likesCount: 47},
+// ];
 
-let postsElements = posts.map(p => <PostB message={p.message} likesCount={p.likesCount} />);
+let postsElements = props.posts.map(p => <PostB message={p.message} likesCount={p.likesCount} />);
 
     return (
         <div className="mypost">
