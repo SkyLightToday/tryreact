@@ -1,3 +1,7 @@
 .post img {
     border-radius: 50%;
 }
+
+.postlike {
+    padding: 3% 0;
+}

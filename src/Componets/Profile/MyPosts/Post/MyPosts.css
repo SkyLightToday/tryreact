@@ -3,6 +3,12 @@
     background-color: #dec7d3;
 }
 
-/* .post img {
-    border-radius: 50%;
-} */
+.mypost {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.mypostMess {
+    padding: 5% 0;
+}
+

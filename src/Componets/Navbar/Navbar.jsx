@@ -2,23 +2,33 @@ import React from 'react';
 import'./Navbar.css';
 import {NavLink} from 'react-router-dom';
 
+
+
 const Navbar = () => {
+
+  let activeStyle = {
+    // textDecoration: "underline",
+    color: "#338fdb",
+  };
+
+  // let activeClassName = "active";//--ком стр пишет,что я его не использ)
+
     return (
         <nav className="App-nav">
         <div>
-          <NavLink to="/profile">Profile</NavLink>
+          <NavLink to="/profile" style={({ isActive }) => isActive ? activeStyle : undefined}>Profile</NavLink>
           </div>
         <div>
-          <NavLink to="/dialogs">Messages</NavLink>
+          <NavLink to="/dialogs" style={({ isActive }) => isActive ? activeStyle : undefined}>Messages</NavLink>
           </div>
         <div>
-          <NavLink to="/news">News</NavLink>
+          <NavLink to="/news" style={({ isActive }) => isActive ? activeStyle : undefined}>News</NavLink>
         </div>
         <div>
-          <NavLink to="/music">Music</NavLink>
+          <NavLink to="/music" style={({ isActive }) => isActive ? activeStyle : undefined}>Music</NavLink>
         </div>
         <div className="App-nav_last">
-          <NavLink to="#s">Settings</NavLink>
+          <NavLink to="#s" style={({ isActive }) => isActive ? activeStyle : undefined}>Settings</NavLink>
         </div>
       </nav>
     );

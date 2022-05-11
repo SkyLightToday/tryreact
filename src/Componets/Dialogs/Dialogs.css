@@ -4,4 +4,30 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-items {
+    margin-left: 13%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.dialog-items .active {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dialog-messages {
+    margin-right: 13%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #333;
+    /* background-color: aliceblue; */
 }
