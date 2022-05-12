@@ -1,0 +1,62 @@
+.friends {
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(1, 11, 57, 0.5) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tkRd5ey5BWMiqJ4RQFD5N9jrbIRkPeCDOg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.friends h2 {
+    font-size: 2em;
+    color:rgb(103, 10, 140);
+}
+
+.onefriend {
+    display: flex;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.onefriend img {
+    object-fit: cover;
+    width:130px;
+    height:130px;
+    border: 2px solid rgb(103, 10, 140);
+    border-radius: 50%;
+}
+
+.fName {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 10%;
+    margin-left: 3%;
+    /* border: 2px solid #fff; */
+}
+
+.presents {
+    position: absolute;
+    width: 100%;
+    margin-left: 40%;
+}
+
+.presents h2{
+    color: rgb(141, 35, 183);
+    text-shadow: 1px 1px 5px #fff;
+    font-size: 25px;
+}
+
+.presentme img {
+    width: 50px;
+    height: 50px;
+    margin-left: 3%;
+    transition: 0.3s linear;
+}
+
+.presentme img:hover {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+}

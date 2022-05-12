@@ -27,6 +27,9 @@ const Navbar = () => {
         <div>
           <NavLink to="/music" style={({ isActive }) => isActive ? activeStyle : undefined}>Music</NavLink>
         </div>
+        <div>
+          <NavLink to="/friends" style={({ isActive }) => isActive ? activeStyle : undefined}>Friends</NavLink>
+        </div>
         <div className="App-nav_last">
           <NavLink to="#s" style={({ isActive }) => isActive ? activeStyle : undefined}>Settings</NavLink>
         </div>

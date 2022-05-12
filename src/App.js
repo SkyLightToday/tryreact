@@ -6,13 +6,15 @@ import Profile from './Componets/Profile/Profile';
 import Dialogs from './Componets/Dialogs/Dialogs';
 import News from './Componets/News/News';
 import Music from './Componets/Music/Music';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+// import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
+import Friends from './Componets/Friends/Friends';
 
 const App = (props) => {
 
 
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
     <div className="App-wrapper">
       <Header />
       <Navbar />
@@ -22,10 +24,11 @@ const App = (props) => {
           <Route path="/profile" element={<Profile state={props.state.profilePage} />} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/friends" element={<Friends />} />
         </Routes>
      </div>
     </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
 
