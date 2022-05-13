@@ -2,19 +2,26 @@ import React from 'react';
 import  './Dialogs.css';
 import DialogItem from './DialogItem/DialogItem';
 import Messages from './Messeges/Messages';
+import { sendMessageCreator, updateNewMessageBodyCreator } from '../../Redux/state';
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
+    let state = props.store.getState().dialogsPage;
 
-    let messagesElements = props.state.messages.map((m) =><Messages message={m.message} />);
+    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);//error dialogs props-state
 
-    // let myMessageElement = React.createRef();
+    let messagesElements = props.state.messages.map((m) =><Messages message={m.message} />);//error props-state
 
-    // let myMessage = () => {
-    //     let textMessage = myMessageElement.current.value;
-    //     alert(textMessage);
-    // }
+    let newMessageBody = props.state.newMessageBody;//error props-state
+
+    let onSendMessageClick = () => {
+        props.store.dispatch(sendMessageCreator());
+    }
+
+    let onNewMessageChange = (e) => {
+        let body = e.target.value;
+        props.store.dispatch(updateNewMessageBodyCreator(body));
+    }
 
     return (
         <div className="dialog-content">
@@ -22,18 +29,10 @@ const Dialogs = (props) => {
                 {dialogsElements}
             </div>
             <div className="dialog-messages">
-                {messagesElements}
-                {/* <textarea ref={myMessageElement}></textarea>
-                <button onClick={myMessage}>Добавить ответ</button> */}
+                <div>{messagesElements}</div>
+                <div><textarea value={newMessageBody} onChange={onNewMessageChange} placeholder="Напишите сообщение"></textarea></div>
+                <div><button onClick={onSendMessageClick}>Отправить</button></div>
             </div>
-            {/* <div className="dialog-myMessages">
-               <div className="textarea">
-                    <textarea ref={myMessageElement}></textarea>
-                </div>
-                <div className="mypostBtn">
-                    <button onClick={myMessage}>Добавить ответ</button>
-                </div>
-            </div> */}
         </div>
     );
 }

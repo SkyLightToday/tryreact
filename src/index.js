@@ -3,21 +3,37 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import state from './Redux/state';
-import {addPosts} from './Redux/state';
+import store from './Redux/state';
+//import {addPosts, updateNewPostText, subscribe} from './Redux/state';
 import {BrowserRouter} from 'react-router-dom';
 
-//addPosts("Я вас люблю, котятки");
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
+let rerenderEntireTree = (state) => {
+  // const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   {/* // <React.StrictMode> */}
-    <App state={state} />
+     <App state={state} dispatch={store.dispatch.bind(store)} store={store} /> 
+    {/* <App state={state} dispatch={store.dispatch.bind(store)} /> */}
   {/* // </React.StrictMode> */}
   </BrowserRouter>
 );
+ }
+
+rerenderEntireTree(store.getState());
+store.subscribe(rerenderEntireTree);
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <BrowserRouter>
+//   {/* // <React.StrictMode> */}
+//     <App state={state} addPosts={addPosts} />
+//   {/* // </React.StrictMode> */}
+//   </BrowserRouter>
+// );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

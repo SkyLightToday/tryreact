@@ -20,8 +20,9 @@ const App = (props) => {
       <Navbar />
      <div className="App-wrapper-content">
        <Routes>
-          <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogsPage}  />} />
-          <Route path="/profile" element={<Profile state={props.state.profilePage} />} />
+       {/* <Route path="/dialogs/*" element={<Dialogs store={props.store} state={props.state.dialogsPage}  />} /> */}
+          <Route path="/dialogs/*" element={<Dialogs store={props.store} state={props.state.dialogsPage} />} />
+          <Route path="/profile" element={<Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/friends" element={<Friends />} />
@@ -33,6 +34,3 @@ const App = (props) => {
 }
 
 export default App;
-
-// messages={props.state.dialogsPage.messages}
-{/* <Route path="/profile" element={<Profile posts={props.state.profilePage.posts} />} /> */}
