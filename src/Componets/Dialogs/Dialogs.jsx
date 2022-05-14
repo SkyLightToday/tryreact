@@ -3,11 +3,12 @@ import  './Dialogs.css';
 import DialogItem from './DialogItem/DialogItem';
 import Messages from './Messeges/Messages';
 import { sendMessageCreator, updateNewMessageBodyCreator } from '../../Redux/state';
-//import store from '../../Redux/store';
+//import store from '../../Redux/redux-store';
+//import store from '../../Redux/state';
 
 const Dialogs = (props) => {
 
-    let state = props.store.getState().dialogsPage;
+    //let state = props.store.getState().dialogsPage;
 
     let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);//error dialogs props-state
 

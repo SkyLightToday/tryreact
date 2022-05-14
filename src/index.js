@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './Redux/state';
+import store from './Redux/redux-store';
 //import {addPosts, updateNewPostText, subscribe} from './Redux/state';
 import {BrowserRouter} from 'react-router-dom';
 
@@ -21,7 +21,10 @@ root.render(
  }
 
 rerenderEntireTree(store.getState());
-store.subscribe(rerenderEntireTree);
+store.subscribe(() => {
+  let state = store.getState();
+  rerenderEntireTree(state);
+});
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(

@@ -34,3 +34,5 @@ const App = (props) => {
 }
 
 export default App;
+
+// state={props.state.dialogsPage}
