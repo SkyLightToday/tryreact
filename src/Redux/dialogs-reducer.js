@@ -20,23 +20,23 @@ let initialState = {
 }
 
 const dialogsReducer = (state = initialState, action) => {
-    if(action.type === UPDATE_NEW_MESSAGE_BODY) {
-        state.newMessageBody = action.body;//newMessageBody(body)
-
-      } else if(action.type === SEND_MESSAGE) {
-        let body = state.newMessageBody;
-        state.newMessageBody = '';//зануление.очистка поля ввода
-        state.messages.push({id: 6, message: body});
-
-      }
-
-
-    return state;
+    let stateCopy;
+    switch (action.type) {
+        case UPDATE_NEW_MESSAGE_BODY:
+            stateCopy = {...state, newMessageBody: action.body};//{...state, messages: [...state.messages]};
+            //stateCopy.newMessageBody = action.body;
+            return stateCopy;
+        case SEND_MESSAGE:
+            let body = state.newMessageBody;
+            stateCopy = {...state,
+                newMessageBody: '',
+                messages: [...state.messages, {id: 6, message: body}]
+            };
+            return stateCopy;
+        default:
+            return state;
+    }
 };
-
-// export const addPostActionCreator = () => ({type: ADD_POST});
-// export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT,
-//     newText: text,});
 
 export const sendMessageCreator = () => ({type: SEND_MESSAGE});
 export const updateNewMessageBodyCreator = (body) => ({type: UPDATE_NEW_MESSAGE_BODY, body: body});

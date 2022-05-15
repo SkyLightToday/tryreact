@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Componets/Header/Header';
 import Navbar from './Componets/Navbar/Navbar';
 import Profile from './Componets/Profile/Profile';
-import Dialogs from './Componets/Dialogs/Dialogs';
+import DialogsContainer from './Componets/Dialogs/DialogsContainer';
 import News from './Componets/News/News';
 import Music from './Componets/Music/Music';
 // import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -21,8 +21,9 @@ const App = (props) => {
      <div className="App-wrapper-content">
        <Routes>
        {/* <Route path="/dialogs/*" element={<Dialogs store={props.store} state={props.state.dialogsPage}  />} /> */}
-          <Route path="/dialogs/*" element={<Dialogs store={props.store} state={props.state.dialogsPage} />} />
-          <Route path="/profile" element={<Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />} />
+          <Route path="/dialogs/*" element={<DialogsContainer store={props.store} />} />
+          <Route path="/profile" element={<Profile store={props.store} />} />
+          {/* <Route path="/profile" element={<Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />} /> */}
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/friends" element={<Friends />} />
@@ -35,4 +36,5 @@ const App = (props) => {
 
 export default App;
 
+// state={props.state.dialogsPage}
 // state={props.state.dialogsPage}

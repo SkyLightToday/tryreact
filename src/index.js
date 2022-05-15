@@ -6,25 +6,32 @@ import reportWebVitals from './reportWebVitals';
 import store from './Redux/redux-store';
 //import {addPosts, updateNewPostText, subscribe} from './Redux/state';
 import {BrowserRouter} from 'react-router-dom';
+import { Provider } from 'react-redux';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let rerenderEntireTree = (state) => {
+// let rerenderEntireTree = (state) => {
   // const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   {/* // <React.StrictMode> */}
-     <App state={state} dispatch={store.dispatch.bind(store)} store={store} />
+    <Provider store={store}>
+      <App  />
+    </Provider>
     {/* <App state={state} dispatch={store.dispatch.bind(store)} /> */}
   {/* // </React.StrictMode> */}
   </BrowserRouter>
 );
- }
+// }
 
-rerenderEntireTree(store.getState());
-store.subscribe(() => {
-  let state = store.getState();
-  rerenderEntireTree(state);
-});
+//rerenderEntireTree(store.getState());
+// store.subscribe(() => {
+//   let state = store.getState();
+//   rerenderEntireTree(state);
+// });
+
+//<App state={state} dispatch={store.dispatch.bind(store)} store={store} />
+
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
