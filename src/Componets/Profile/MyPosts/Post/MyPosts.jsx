@@ -1,7 +1,7 @@
 import React from 'react';
 import  './MyPosts.css';
 import PostB from './PostB/PostB';
-import {addPostActionCreator, updateNewPostTextActionCreator} from '../../../../Redux/state';
+import {addPostActionCreator, updateNewPostTextActionCreator} from '../../../../Redux/profile-reducer';
 
 
 const MyPosts = (props) => {
@@ -11,21 +11,23 @@ let postsElements = props.posts.map(p => <PostB message={p.message} likesCount={
 let newPostElement = React.createRef();
 
 let addPosts = () => {
+  //props.addPosts();//у него эта строка
   props.dispatch(addPostActionCreator());
 }
 
- let newPostChange = () => {
+ let onPostChange = () => {//newPostChange
   let text = newPostElement.current.value;
   //let action = ({type: 'UPDATE-NEW-POST-TEXT', newText: text});
-  let action = updateNewPostTextActionCreator(text);
-  props.dispatch(action);
+  props.updateNewPostText(text);
+  //let action = updateNewPostTextActionCreator(text);//updatPostActionCreator
+  //props.dispatch(action);
 }
 
     return (
         <div className="mypost">
           <h2>My post</h2>
           <div className="textarea">
-           <textarea onChange={newPostChange} ref={newPostElement} value={props.newPostText} />
+           <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText} />
           </div>
           <div className="mypostBtn">
           <button onClick={addPosts}>Добавить пост</button>
