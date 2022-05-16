@@ -29,17 +29,7 @@ const profileReducer = (state = initialState, action) => {
             default:
                 return state;
     }
-    // if(action.type === ADD_POST) {
-    //     let newPost = {
-    //       id: 5, message: state.newPostText, likesCount: 0
-    //     };
-    //     state.posts.push(newPost);
-    //     state.newPostText = '';//зануление.очистка поля ввода
-    //   } else if(action.type === UPDATE_NEW_POST_TEXT) {
-    //       state.newPostText = action.newText;
-    //   }
-
-    // return state;
+  //тут он изменил на return, я не стала-и так всё работает
 };
 
 export const addPostActionCreator = () => ({type: ADD_POST})
