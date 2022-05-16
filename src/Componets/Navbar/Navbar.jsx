@@ -30,6 +30,9 @@ const Navbar = () => {
         <div>
           <NavLink to="/friends" style={({ isActive }) => isActive ? activeStyle : undefined}>Friends</NavLink>
         </div>
+        <div>
+          <NavLink to="/users" style={({ isActive }) => isActive ? activeStyle : undefined}>Users</NavLink>
+        </div>
         <div className="App-nav_last">
           <NavLink to="#s" style={({ isActive }) => isActive ? activeStyle : undefined}>Settings</NavLink>
         </div>

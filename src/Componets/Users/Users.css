@@ -1,0 +1,14 @@
+.users {
+    height: 500px;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(1, 11, 57, 0.5) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLYXXk-Fq9iAQD2q8vNIYop10n2-_-zgE6tx0UGLPZVSQtggb5ODkGXNUUva9xHoi7pA&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.userImg img {
+    object-fit: cover;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
