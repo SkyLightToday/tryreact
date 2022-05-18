@@ -4,6 +4,33 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
+}
+
+.usersContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.userItemName {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    width: 350px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgb(226, 220, 239);
+    align-items: center;
+}
+
+.userName1 {
+    margin-left: 10px;
+}
+
+.userName2 {
+    margin-right: 10px;
 }
 
 .userImg img {
@@ -11,6 +38,12 @@
     width:70px;
     height:70px;
     border-radius: 50%;
+    margin-left: 20px;
+}
+
+.userBtn {
+    margin-left: 27px;
+    margin-bottom: 25px;
 }
 
 .selectedPage {
@@ -22,4 +55,14 @@
     color: #fff;
     text-shadow: 1px 1px 5px rgb(49, 3, 99);
     font-size: 22px;
+}
+
+.loader {
+    position: absolute;
+    z-index: 1;
+    margin-top: 12%;
+    margin-left: 35%;
+    border-radius: 50%;
+    opacity: 0.5;
+
 }
