@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './Componets/Header/Header';
 import Navbar from './Componets/Navbar/Navbar';
-import Profile from './Componets/Profile/Profile';
 import DialogsContainer from './Componets/Dialogs/DialogsContainer';
 import News from './Componets/News/News';
 import Music from './Componets/Music/Music';
 import {Routes, Route} from 'react-router-dom';
 import Friends from './Componets/Friends/Friends';
 import UsersContainer from './Componets/Users/UsersContainer';
+import ProfileContainer from './Componets/Profile/ProfileContainer';
 
 const App = (props) => {
 
@@ -19,8 +19,8 @@ const App = (props) => {
       <Navbar />
      <div className="App-wrapper-content">
        <Routes>
-          <Route path="/dialogs/*" element={<DialogsContainer store={props.store} />} />
-          <Route path="/profile" element={<Profile store={props.store} />} />
+          <Route path="/dialogs/*" element={<DialogsContainer />} />
+          <Route path="/profile/*" element={<ProfileContainer />} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/friends" element={<Friends />} />
@@ -32,3 +32,5 @@ const App = (props) => {
 }
 
 export default App;
+
+//store={props.store}-ProfileContainer and DialodsContainer

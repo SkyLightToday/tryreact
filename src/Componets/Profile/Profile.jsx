@@ -7,8 +7,9 @@ const Profile = (props) => {
 
     return (
         <div className="App-content">
-          <ProfileInfo />
-          <MyPostsContainer store={props.store} />
+          <ProfileInfo profile={props.profile} />
+          <MyPostsContainer />
+          {/* у него нет  store={props.store}*/}
         </div>
     );
 }
