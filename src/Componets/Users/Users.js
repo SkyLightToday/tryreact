@@ -15,7 +15,7 @@ let Users = (props) => {
         <div className="users">
                 <div>
                     {pages.map(p => {
-                        return <span className={props.currentPage === p ? "selectedPage active" : "selectedPage"} onClick={() => {props.onPageChenged(p);}}> {p < 21 ? p : ""}</span>;//this.onPageChenged(p).props.onPageChanged(p); }}>{p < 21 ? p : ""}//{props.onPageChenged(p);}}> {p}--уменьшить кол-во страниц
+                        return <span className={props.currentPage === p ? "selectedPage active" : "selectedPage"} onClick={() => {props.onPageChenged(p);}}> {p < 70 ? p : ""}</span>;//this.onPageChenged(p).props.onPageChanged(p); }}>{p < 21 ? p : ""}//{props.onPageChenged(p);}}> {p}--уменьшить кол-во страниц
                     })}
                 </div>
                 {
