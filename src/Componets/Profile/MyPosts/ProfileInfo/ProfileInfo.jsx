@@ -12,7 +12,7 @@ const ProfileInfo = (props) => {
         </div>
          <div className="App-content_ava">
           {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7KJvCdzu6AXNRZvJ9Iju1YYBZK_1e5AKZg&usqp=CAU" alt="#" /> */}
-          <img src={props.profile.photos.large} />
+          <img src={props.profile.photos.large} alt="#" />
           <ul>
             <li>Имя: Мэри</li>
             <li>Дата рождения: 12.05.2010</li>
