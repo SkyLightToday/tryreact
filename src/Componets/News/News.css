@@ -1,6 +1,6 @@
 .news-content {
     height: 500px;
-    background: linear-gradient( rgba(54, 52, 52, 0.8), rgba(15, 43, 135, 0.8) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkAYQxO2pSHJj0MS8o-jhU1ZKzSYoJPRWOA&usqp=CAU');
+    background: linear-gradient( rgba(54, 52, 52, 0.8), rgba(11, 26, 75, 0.8) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkAYQxO2pSHJj0MS8o-jhU1ZKzSYoJPRWOA&usqp=CAU');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
