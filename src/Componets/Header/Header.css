@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+/* font-family: 'Smooch', cursive; */
+
 .App-header {
     grid-area: h;
+    background-image: url('../../assets/img/nightcity.jpg');
+    object-fit: cover;
+    height: 100px;
+    z-index: 1;
   }
 
 .App-header img {
     width: 100px;
+    height: 100px;
+    border-right: 2px solid rgb(135, 134, 134);
   }
+
+.BadNightCats {
+  /* width: 200px; */
+}
+
+.BadNightCats h1 {
+  font-size: 48px;
+  font-family: 'Smooch', cursive;
+  letter-spacing: 3px;
+  color: #d7d5cd;
+  /* text-shadow: #fff 1px 0 10px; */
+  /* opacity: 0.9; */
+  margin-top: -90px;
+  margin-left: 150px;
+}
 
 .loginBlock {
   float: right;
+  color: #fff;
+  font-size: 20px;
+  margin-top: -80px;
+  margin-right: 20px;
 }
 
 .loginBlock .login {

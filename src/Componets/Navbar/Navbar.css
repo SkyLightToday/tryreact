@@ -1,10 +1,10 @@
 .App-nav {
     grid-area: n;
-    background-color: #492661;
+    background-color: #232b44;
   }
 
   .App-nav {
-    padding-top: 20%;
+    padding-top: 40%;
   }
 
   .App-nav a {

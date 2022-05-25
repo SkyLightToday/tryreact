@@ -26,8 +26,6 @@ class UsersContainer extends React.Component {
            });
     }
 
-//this.props.setCurrentPage(p)
-// https://social-network.samuraijs.com/api/1.0/users
    render() {
        return <>
        {this.props.isFetching ? <Winter /> : null}
@@ -48,26 +46,3 @@ let mapStateToProps = (state) => {
 
 
 export default connect(mapStateToProps, {follow, unfollow, setUsers, setCurrentPage,setTotalUsersCount, toggleIsFetching}) (UsersContainer);
-
-// let mapDispatchToProps = (dispatch) => {
-//     return {
-//         follow: (userId) => {
-//             dispatch(followAC(userId));
-//         },
-//         unfollow: (userId) => {
-//             dispatch(unfollowAC(userId));
-//         },
-//         setUsers: (users) => {
-//             dispatch(setUsersAC(users));
-//         },
-//         setCurrentPage: (pageNumber) => {
-//             dispatch(setCurrentPageAC(pageNumber));
-//         },
-//         setTotalUsersCount: (totalCount) => {
-//             dispatch(setTotalUsersCountAC(totalCount));
-//         },
-//         toggleIsFetching: (isFetching) => {
-//             dispatch(toggleIsFetchingAC(isFetching));
-//         }
-//     }
-// }

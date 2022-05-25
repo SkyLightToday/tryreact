@@ -1,7 +1,8 @@
 .music-content {
     height: 500px;
-    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(1, 11, 57, 0.5) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5U2otykKeSjrkHIKnvIhIxWpEU13yvJxpgw&usqp=CAU');
+    background: linear-gradient( rgba(50, 48, 48, 0.8), rgba(1, 11, 57, 0.9) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5U2otykKeSjrkHIKnvIhIxWpEU13yvJxpgw&usqp=CAU');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    color: #fff;
 }

@@ -1,5 +1,5 @@
 .friends {
-    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(1, 11, 57, 0.5) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tkRd5ey5BWMiqJ4RQFD5N9jrbIRkPeCDOg&usqp=CAU');
+    background: linear-gradient( rgba(58, 56, 71, 0.8), rgba(1, 11, 57, 0.5) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfyvsMivuu9LX6duCETzB2djCa9ZY2QHc0g&usqp=CAU');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -10,7 +10,7 @@
 
 .friends h2 {
     font-size: 2em;
-    color:rgb(103, 10, 140);
+    color:rgb(251, 248, 253);
 }
 
 .onefriend {
@@ -23,7 +23,7 @@
     object-fit: cover;
     width:130px;
     height:130px;
-    border: 2px solid rgb(103, 10, 140);
+    border: 2px solid rgb(28, 19, 67);
     border-radius: 50%;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .presents h2{
-    color: rgb(141, 35, 183);
+    color: #1e3f8c;
     text-shadow: 1px 1px 5px #fff;
     font-size: 25px;
 }

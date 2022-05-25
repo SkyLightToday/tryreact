@@ -1,11 +1,12 @@
 .App-content {
     grid-area: c;
-    background-color: #dec7d3;
+    background-color: #38486c;
 }
 
 .mypost {
     padding-left: 5%;
     padding-top: 5%;
+    color: rgb(147, 143, 143);
 }
 
 .mypostMess {

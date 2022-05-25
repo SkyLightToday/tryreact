@@ -6,7 +6,7 @@ const FriendsInfo = () => {
         <div className="friends">
             <h2>Мои Друзья</h2>
             <div className="onefriend">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9-_PKWHh4PgpZjm4VW1iPcasscBfo6nEpw&usqp=CAU" alt="#" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTy4qsrqedqp90LeVgm39CAwGxOsjU8Jczgg&usqp=CAU" alt="#" />
                 <div className="fName">
                 Маркиза
                 </div>
@@ -32,7 +32,7 @@ const FriendsInfo = () => {
                 </div>
             </div>
             <div className="onefriend">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJboAeylU14Tr7UDctlD0LF5nPDNXUhxtbg&usqp=CAU" alt="#" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzxbOyc-JE71g2PjSawqLG8LMLCjGEWPlzCw&usqp=CAU" alt="#" />
                 <div className="fName">
                 Бэлла
                 </div>
@@ -45,7 +45,7 @@ const FriendsInfo = () => {
                 </div>
             </div>
             <div className="onefriend">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkpl4k-ZesxKZbQVnD5o8jw8FMacH5UzOjDw&usqp=CAU" alt="#" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7n3TvPzDFqZimpB3jF5gL4fClczc61WYqQ&usqp=CAU" alt="#" />
                 <div className="fName">
                 Ватсон
                 </div>

@@ -15,5 +15,3 @@ const Profile = (props) => {
 }
 
 export default Profile;
-
-//{/* <MyPostsContainer posts={props.profilePage.posts} dispatch={props.dispatch} newPostText={props.profilePage.newPostText} /> */}
